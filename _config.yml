@@ -1,0 +1,30 @@
+title: CSC Cloud — Using CSC Cloud
+
+plugins:
+  - jekyll-sitemap
+  - raw_content
+
+collections:
+    lectures:
+        output: true
+    exercises:
+        output: true
+    extras:
+        output: true
+
+defaults:
+  -
+    scope:
+      path: "_lectures"
+    values:
+      layout: "slides-csc"
+  -
+    scope:
+      path: "_exercises"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "_extras"
+    values:
+      layout: "default"

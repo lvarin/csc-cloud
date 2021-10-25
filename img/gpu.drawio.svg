@@ -1,0 +1,36 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="271px" height="222px" viewBox="-0.5 -0.5 271 222" content="&lt;mxfile host=&quot;3584f1ff-cd60-42a0-9456-8c91fd9d923d&quot; modified=&quot;2021-01-08T08:57:45.920Z&quot; agent=&quot;5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.52.1 Chrome/83.0.4103.122 Electron/9.3.5 Safari/537.36&quot; version=&quot;13.10.0&quot; etag=&quot;4DIxNMSY4y3bFWx9hkeY&quot; type=&quot;embed&quot;&gt;&lt;diagram id=&quot;DRZmHTOyoqngskcEbfQn&quot; name=&quot;Page-1&quot;&gt;rZTbbtswDIafxpczYivHy+XQbsAGFOiGXQ6qzdpCZVGQmcTZ00+KJR/qBNiG5SIQf9IUyY9QxHZV82i4Lr9iDjJKZ3kTsX2UpvMNs/9OuLQCY5tWKIzIWynphWfxC7w48+pR5FCPAglRktBjMUOlIKORxo3B8zjsFeX4Vs0LmAjPGZdT9YfIqWzVdbrq9U8gijLcnCx9fxUPwb6TuuQ5ngcSO0RsZxCpPVXNDqSbXZhL+93DHW9XmAFFf/KBB3Hi8uh783XRJTSrUSgCczjZlG5uScS2Xdkza+S8LiH3RkmVDEFk8A12KNFYRaGyCbevQsogRSmbzzeLa7DkLyCfsBYkUFlfBu5S6ziBIWFH/+VdwAsSYTUI+ChF4RyE2qrcW10ePJIUypYTVmLW9qFdm1VTuEWNTwC8itM8VkBnNG8/M25sZ1s/JXsTNHcnnXT87N4DVkDmYkPC0nvil/Eqn/v9SVdeKwe7020K9ztbdJl7rPbgyd6mnE4oPz59n4AeoHtHaZGs5w/sHtLbAP4d6ARdrXkmVPHN5d1/WLr6UJF/FpIk2L6TYA/q31x/N3gXmU7jEprPmSthq0172Bf6+B+Qr8bI11Pky+WU+GIdL/4auTX7R+PqG7y87PAb&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="0" y="0" width="270" height="220" fill="none" stroke="none" pointer-events="all"/>
+        <path d="M 0 220 L 0 0 L 7.68 0 L 7.68 39.91 L 270 39.91 L 270 201.09 L 89.52 201.09 L 89.52 180.79 L 33.96 180.79 L 33.96 201.09 L 7.68 201.09 L 7.68 220 Z" fill="#4495d1" stroke="none" pointer-events="all"/>
+        <path d="M 237.84 192.41 L 237.84 182.19 L 254.64 182.19 L 254.64 192.41 Z M 211.8 192.41 L 211.8 182.19 L 228.6 182.19 L 228.6 192.41 Z M 185.76 192.41 L 185.76 182.19 L 202.56 182.19 L 202.56 192.41 Z M 159.72 192.41 L 159.72 182.19 L 176.64 182.19 L 176.64 192.41 Z M 133.68 192.41 L 133.68 182.19 L 150.6 182.19 L 150.6 192.41 Z M 107.76 192.41 L 107.76 182.19 L 124.56 182.19 L 124.56 192.41 Z M 161.52 134.86 L 200.76 134.86 L 200.76 85.7 L 161.52 85.7 Z M 147.36 146.9 L 147.36 73.66 L 215.04 73.66 L 215.04 146.9 Z M 34.68 147.74 L 34.68 72.82 L 90.84 72.82 L 90.84 147.74 Z" fill="#ffffff" stroke="none" pointer-events="all"/>
+        <path d="M 54.28 119.14 C 52.81 119.14 51.39 118.33 50.66 116.8 L 42 101.2 C 41.22 99.83 41.34 98.25 42 97.12 L 50.73 81.51 C 51.47 80.09 52.79 79.36 54.14 79.36 L 71.66 79.36 C 72.97 79.36 74.26 80.02 75.03 81.35 L 83.73 96.95 C 84.78 98.59 84.42 100.34 83.83 101.32 L 75.17 116.82 C 74.6 118.08 73.29 119.14 71.61 119.14 Z" fill="#5184f3" stroke="none" pointer-events="all"/>
+        <path d="M 68.18 119.14 L 53.97 104.63 L 56.07 102.23 L 53.97 100.45 L 56.07 98.04 L 53.97 96.29 L 60.06 90.01 L 62.1 92.23 L 64.02 90.01 L 66.08 92.19 L 68.11 90.01 L 82.08 104.45 L 75.17 116.82 C 74.6 118.08 73.29 119.14 71.61 119.14 Z" fill-opacity="0.07" fill="#000000" stroke="none" pointer-events="all"/>
+        <rect x="41.22" y="79.36" width="0" height="0" fill="none" stroke="none" pointer-events="all"/>
+        <path d="M 62.23 103.15 L 62.23 99.63 L 60.28 99.63 L 63.74 94.93 L 63.74 98.36 L 65.58 98.36 Z M 66.89 104.04 C 67.36 104.04 67.56 103.79 67.56 103.42 L 67.56 95.07 C 67.56 94.67 67.25 94.46 66.89 94.46 L 58.79 94.46 C 58.47 94.46 58.24 94.66 58.24 94.99 L 58.24 103.47 C 58.24 103.79 58.4 104.04 58.73 104.04 Z M 68.11 108.48 L 65.78 108.48 L 65.78 106.34 L 64.02 106.34 L 64.02 108.48 L 61.83 108.48 L 61.83 106.34 L 60.06 106.34 L 60.06 108.48 L 57.74 108.48 L 57.74 106.34 C 57.05 106.34 56.07 105.51 56.07 104.63 L 53.97 104.63 L 53.97 102.21 L 56.07 102.21 L 56.07 100.45 L 53.97 100.45 L 53.97 98.04 L 56.07 98.04 L 56.07 96.29 L 53.97 96.29 L 53.97 93.88 L 56.07 93.88 C 56.07 93.14 56.89 92.14 57.74 92.14 L 57.74 90.01 L 60.06 90.01 L 60.06 92.14 L 61.83 92.14 L 61.83 90.01 L 64.02 90.01 L 64.02 92.14 L 65.78 92.14 L 65.78 90.01 L 68.11 90.01 L 68.11 92.14 C 68.89 92.14 69.82 93.07 69.82 93.88 L 71.88 93.88 L 71.88 96.29 L 69.82 96.29 L 69.82 98.04 L 71.88 98.04 L 71.88 100.45 L 69.82 100.45 L 69.82 102.21 L 71.88 102.21 L 71.88 104.63 L 69.82 104.63 C 69.82 105.28 68.92 106.34 68.11 106.34 Z" fill="#ffffff" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 129px; margin-left: 63px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: #999999; line-height: 1.2; pointer-events: all; font-weight: bold; white-space: nowrap; ">
+                                GPU
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="63" y="140" fill="#999999" font-family="Helvetica" font-size="11px" text-anchor="middle" font-weight="bold">
+                    GPU
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://desk.draw.io/support/solutions/articles/16000042487" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Viewer does not support full SVG 1.1
+            </text>
+        </a>
+    </switch>
+</svg>

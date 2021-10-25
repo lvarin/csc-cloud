@@ -1,0 +1,48 @@
+<!doctype html>
+
+<!-- Minimalistic slideshow -->
+
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="{{ "/css/slides-csc.css" | relative_url }}"/>
+        <link rel="stylesheet" href="{{ "/css/asciinema-player.css" | relative_url }}"/>
+        <script src="{{ "/js/slides-csc.js" | relative_url }}"></script>
+        <script src="{{ "/js/asciinema-player.js" | relative_url }}"></script>
+        <script src="{{ "/js/mermaid.min.js" | relative_url }}"></script>
+        <style>
+          @import url(/css/fonts.css);
+          @import url(/css/custom.css);
+          @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+          @import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700,400italic);
+          @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+          @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+        </style>
+    </head>
+
+    <body style="display: none;"
+          onload="init();"
+          onkeydown="keypress(event);"
+          onclick="mouseclick(event);"
+          onresize="resizeRem();">
+
+        {% if page.titleslide %}
+        <div class="title-slide">
+            <div class="title-box">
+                <div>
+                    <div class="title">
+                        CSC Cloud — {{ page.title }}
+                    </div>
+                    <div class="author">
+                        {{ page.author }} {{ page.presentation-date }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        {{ content }}
+
+    </body>
+
+</html>
