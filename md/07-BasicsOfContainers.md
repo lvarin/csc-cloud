@@ -11,7 +11,7 @@ class: topicslide
 
 ---
 
-# ![:scale 10%, OpenStack](/img/openshift-logo.png) Rahti
+# ![:scale 10%, OpenStack](/csc-cloud/img/openshift-logo.png) Rahti
 
 .bubble.bubble-bottom-left[
 The Rahti Cloud is CSC's **Platform as a Service** (PaaS) offering. Based on **OpenShift**/**Kubernetes**.
@@ -33,9 +33,9 @@ The Rahti Cloud is CSC's **Platform as a Service** (PaaS) offering. Based on **O
 .col[
 Before
 .center[
-![:scale 30%, old-cargo](/img/old-time-cargo.jpg)
-![:scale 30%, old-cargo](/img/old-time-cargo-2.jpg)
-![:scale 30%, old-cargo](/img/Loading-goods.jpg)
+![:scale 30%, old-cargo](/csc-cloud/img/old-time-cargo.jpg)
+![:scale 30%, old-cargo](/csc-cloud/img/old-time-cargo-2.jpg)
+![:scale 30%, old-cargo](/csc-cloud/img/Loading-goods.jpg)
 ]
 
 * **Different installation methods**: compile from source, installation wizard, rpm/deb package, etc
@@ -48,9 +48,9 @@ Before
 After
 
 .center[
-![:scale 30%, modern-cargo](/img/truck-cargo.jpg)
-![:scale 30%, modern-cargo](/img/train-cargo.jpg)
-![:scale 30%, modern-cargo](/img/modern-cargo.jpg)
+![:scale 30%, modern-cargo](/csc-cloud/img/truck-cargo.jpg)
+![:scale 30%, modern-cargo](/csc-cloud/img/train-cargo.jpg)
+![:scale 30%, modern-cargo](/csc-cloud/img/modern-cargo.jpg)
 ]
 
 * **Standard image registry**, fast and standard deployment.
@@ -79,7 +79,7 @@ After
 
   ]
 .col[
-  .right[![:scale 85%, Orchestration](/img/container-158362.svg)]
+  .right[![:scale 85%, Orchestration](/csc-cloud/img/container-158362.svg)]
 ]]
 
 ---
@@ -104,7 +104,7 @@ After
 
   ]
 .col[
-  .right[![:scale 85%, Orchestration](/img/container-158362.svg)]
+  .right[![:scale 85%, Orchestration](/csc-cloud/img/container-158362.svg)]
 ]]
 
 ---
@@ -117,8 +117,8 @@ After
 ### Web console
 
 .fillimg[
-![:scale 80%, web-console](/img/rahti-ui.png)
-![:scale 80%, web-console](/img/rahti-ui-browse.png)
+![:scale 80%, web-console](/csc-cloud/img/rahti-ui.png)
+![:scale 80%, web-console](/csc-cloud/img/rahti-ui-browse.png)
 ]
 ]
 .col.padleft[
@@ -170,7 +170,7 @@ k8s = config.new_client_from_config()
 ]
 .padleft.maxhalf.col[
 .fillimg[
-![:scale 75%, web-console](/img/gui/service catalog.png)
+![:scale 75%, web-console](/csc-cloud/img/gui/service catalog.png)
 ]]]
 
 ---
@@ -193,7 +193,7 @@ k8s = config.new_client_from_config()
 * Monitoring
 ]
 .padleft.maxhalf.col[
-![:scale 75%, web-console](/img/gui/application console.png)
+![:scale 75%, web-console](/csc-cloud/img/gui/application console.png)
 
 ]]
 
@@ -214,7 +214,7 @@ k8s = config.new_client_from_config()
 ]
 .padleft.maxhalf.col[
 
-![:scale 75%, web-console](/img/gui/cluster console.png)
+![:scale 75%, web-console](/csc-cloud/img/gui/cluster console.png)
 ]]
 
 ---
@@ -233,7 +233,7 @@ There are other OCI compatible container run times ([CRI-O](https://cri-o.io/), 
 ]
 .col[
 
-.right[![:scale 90%, VMs vs. containers](/img/vm_vs_container.png)]
+.right[![:scale 90%, VMs vs. containers](/csc-cloud/img/vm_vs_container.png)]
 
 ]]
 
@@ -258,7 +258,7 @@ There are other OCI compatible container run times ([CRI-O](https://cri-o.io/), 
 
 .col[
 
-.center[![:scale 80%, Docker logo](/img/docker.drawio.svg)]
+.center[![:scale 80%, Docker logo](/csc-cloud/img/docker.drawio.svg)]
 
 ]]
 
@@ -278,7 +278,7 @@ In Kubernetes/OpenShift everything is a object
   * Runtime of containers
 ]
   .col70[
-.center[![:scale 85%, Objects](/img/Kubernetes-fuller.drawio.svg)]
+.center[![:scale 85%, Objects](/csc-cloud/img/Kubernetes-fuller.drawio.svg)]
   ]]
 
 ---
@@ -301,7 +301,7 @@ A project sandboxes API objects (Pods and others) in a common namespace.
 
 
 ].col[
-![:scale 100%, Project page](/img/projectPage.png)
+![:scale 100%, Project page](/csc-cloud/img/projectPage.png)
 ]]
 
 ---
@@ -338,7 +338,7 @@ spec:
 
 ]
 .padleft.scaleimg.col[
-.center[![pod](/img/pod-and-conts.drawio.svg)
+.center[![pod](/csc-cloud/img/pod-and-conts.drawio.svg)
 ]]]
 
 Communicate via:
@@ -365,7 +365,7 @@ An API object that provides pods a **load balanced** stable network identity.
 ]
 .col[
 
-.center[![Service](/img/servicePod.drawio.svg)]
+.center[![Service](/csc-cloud/img/servicePod.drawio.svg)]
 
 ]]
 
@@ -388,7 +388,7 @@ An API object that exposes a Service to the internet via HTTP/HTTPS.
 
 .col[
 
-.center[![Route Service Pod](/img/routeServicePod.drawio.svg)]
+.center[![Route Service Pod](/csc-cloud/img/routeServicePod.drawio.svg)]
 
 ]]
 
@@ -408,41 +408,41 @@ An API object that exposes a Service to the internet via HTTP/HTTPS.
 
 ]
 .col[
-.center[![Catalog](/img/templateCatalog.drawio.svg)
+.center[![Catalog](/csc-cloud/img/templateCatalog.drawio.svg)
 
-![Python](/img/Python-logo-notext.svg)
-![:scale 20%, Ruby](/img/Ruby_logo.svg)
-![PostgreSQL](/img/PostgreSQL.svg)
+![Python](/csc-cloud/img/Python-logo-notext.svg)
+![:scale 20%, Ruby](/csc-cloud/img/Ruby_logo.svg)
+![PostgreSQL](/csc-cloud/img/PostgreSQL.svg)
 
-![Jenkins](/img/jenkins.svg)
-![Hadoop](/img/hadoop.svg)
-![Redis](/img/redis.svg)
+![Jenkins](/csc-cloud/img/jenkins.svg)
+![Hadoop](/csc-cloud/img/hadoop.svg)
+![Redis](/csc-cloud/img/redis.svg)
 ]]]
 
 ---
 
 # Catalog
 
-.center[![:scale 45%, Catalog](/img/catalog.png)]
+.center[![:scale 45%, Catalog](/csc-cloud/img/catalog.png)]
 
 ---
 
 # Source to image Python I
 
-.center[![:scale 50%, Source2Image](/img/PythonS2I-information.png)]
+.center[![:scale 50%, Source2Image](/csc-cloud/img/PythonS2I-information.png)]
 
 ---
 
 # Source to image Python II
 
-.center[![:scale 50%, Source2Image](/img/PythonS2I.png)]
+.center[![:scale 50%, Source2Image](/csc-cloud/img/PythonS2I.png)]
 
 ---
 
 # Source to image Python III
 
 .container[.col66[
-.center[![:scale 65%, Source2Image](/img/PythonS2I-build.png)]
+.center[![:scale 65%, Source2Image](/csc-cloud/img/PythonS2I-build.png)]
 ].col[
   Rahti will automatically:
 

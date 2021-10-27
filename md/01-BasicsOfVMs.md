@@ -13,7 +13,7 @@ class: topicslide
 
 # Pouta: Resources you get
 
-.center[![:scale 65%, Typical resources you get from Pouta clouds](/img/typical_Resources_You_get_from_Pouta_Clouds.png)]
+.center[![:scale 65%, Typical resources you get from Pouta clouds](/csc-cloud/img/typical_Resources_You_get_from_Pouta_Clouds.png)]
 
 .footnote[*S3/Switf API access
 
@@ -23,7 +23,7 @@ class: topicslide
 
 # Pouta: Hardware Flavor Options
 
-.center[![:scale 60%, Pouta hardware options](/img/pouta_hardware_options.drawio.svg)]
+.center[![:scale 60%, Pouta hardware options](/csc-cloud/img/pouta_hardware_options.drawio.svg)]
 
 ---
 
@@ -68,5 +68,5 @@ Billing units and Pricing at <https://research.csc.fi/pricing>
 * OS images pre installed with latest [CUDA](<https://en.wikipedia.org/wiki/CUDA>) version are available. (You may also use your own OS images by installing required libraries yourself).
 
 ].col[
-.right[![GPU card](/img/gpu.drawio.svg)]
+.right[![GPU card](/csc-cloud/img/gpu.drawio.svg)]
 ]]

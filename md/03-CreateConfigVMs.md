@@ -23,7 +23,7 @@ Click on create Key Pair, name key as
 **lastname_firstname**
 
 ].col[
-.center[![:scale 90%](/img/access_security.png)]
+.center[![:scale 90%](/csc-cloud/img/access_security.png)]
 ]]
 
 .container[.col[
@@ -35,7 +35,7 @@ The public key will be stored in Pouta.
 It is also possible to create the key using the command line tool `ssh-keygen` and then upload the public key to Pouta.
 
 ]
-.col[.center[![:scale 80%](/img/create_key_pair.png)]
+.col[.center[![:scale 80%](/csc-cloud/img/create_key_pair.png)]
 ]]
 
 ---
@@ -43,7 +43,7 @@ It is also possible to create the key using the command line tool `ssh-keygen` a
 # [Pouta] Storing a (private) Key
 
 .container[.col[
-    ![UNIX](/img/unix.png)
+    ![UNIX](/csc-cloud/img/unix.png)
 
 #### Linux and Mac OS X
 
@@ -65,7 +65,7 @@ It is also possible to create the key using the command line tool `ssh-keygen` a
 ]
 
 .col[
-    ![Win](/img/win.png)
+    ![Win](/csc-cloud/img/win.png)
 
 #### Windows
 
@@ -94,7 +94,7 @@ A Security Group defines a set of cloud level firewall rules for filtering traff
 
 ]
 .col[
-.center[![Security Groups](/img/security_groups.drawio.svg)]
+.center[![Security Groups](/csc-cloud/img/security_groups.drawio.svg)]
 ]]
 
 ---
@@ -112,7 +112,7 @@ A Security Group defines a set of cloud level firewall rules for filtering traff
 
 ].col[
 
-![:scale 80%, Add rule](/img/add_rule.png)]
+![:scale 80%, Add rule](/csc-cloud/img/add_rule.png)]
 
 ]
 
@@ -133,5 +133,5 @@ A Security Group defines a set of cloud level firewall rules for filtering traff
   * Make sure that the “SSH - World” Security Group is selected (otherwise the firewall will block the connection).
 
 ].col[
-![:scale 75%, launch instance](/img/launch_instance.png)
+![:scale 75%, launch instance](/csc-cloud/img/launch_instance.png)
 ]]

@@ -21,7 +21,7 @@ class: topicslide
 
 ]
 
-.col[![:scale 90%, cloud](/img/cloud.png)]
+.col[![:scale 90%, cloud](/csc-cloud/img/cloud.png)]
 ]
 
 ---
@@ -37,24 +37,24 @@ class: topicslide
   * Rapid elasticity
   * Measured Service
 ]
-.col[![Cloud Computing Characteristics](/img/cloud_Computing_characteristics.drawio.svg)]
+.col[![Cloud Computing Characteristics](/csc-cloud/img/cloud_Computing_characteristics.drawio.svg)]
 ]
 
 ---
 
 # Cloud computing "As A Service"
 
-.center[![:scale 60%, Cloud computing Landscape](/img/cloud_computing_landscape.drawio.svg)]
+.center[![:scale 60%, Cloud computing Landscape](/csc-cloud/img/cloud_computing_landscape.drawio.svg)]
 
 ---
 
 # CSC cloud services
 
-* The **Pouta Cloud** is CSC’s Infrastructure as a Service ([IaaS](https://en.wikipedia.org/wiki/Infrastructure_as_a_service)) offering. Based on [OpenStack](https://www.openstack.org/) ![:scale 3%, Openstack](/img/openstack-icon.png).
+* The **Pouta Cloud** is CSC’s Infrastructure as a Service ([IaaS](https://en.wikipedia.org/wiki/Infrastructure_as_a_service)) offering. Based on [OpenStack](https://www.openstack.org/) ![:scale 3%, Openstack](/csc-cloud/img/openstack-icon.png).
   * Allows running Virtual Machines (VMs) on CSC’s Data Center infrastructure. Grants users **full control** over the OS, middleware and run time environments. On the flip side, users are responsible to **manage** and **secure** their VMs.
 * Provides an IaaS cloud environment for your **sensitive data** processing (ePouta).
 
-* The **Rahti Cloud** is CSC's Platform as a Service ([PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service)) offering. Based on [Openshift](https://www.openshift.com/) ![:scale 3%, OpenStack](/img/openshift-logo.png) (Kubernetes).
+* The **Rahti Cloud** is CSC's Platform as a Service ([PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service)) offering. Based on [Openshift](https://www.openshift.com/) ![:scale 3%, OpenStack](/csc-cloud/img/openshift-logo.png) (Kubernetes).
   * Allows to run Containers on CSC's Data Center infrastructure. Provides the platform (OS, Middleware, Runtime, ...), so you can just worry about running the Software and nothing else.
 
 ---
@@ -64,7 +64,7 @@ class: topicslide
 .stripetable[
 ||cPouta|ePouta|Rahti|
 |:-:|:-:|:-:|:-:|
-||![:scale 20%, OpenStack](/img/openStack.png)|![:scale 20%, OpenStack](/img/openStack.png)|![:scale 20%, OpenStack](/img/openshift-logo.png) ![:scale 20%, Kubernentes](/img/kubernetes-logo.png)|
+||![:scale 20%, OpenStack](/csc-cloud/img/openStack.png)|![:scale 20%, OpenStack](/csc-cloud/img/openStack.png)|![:scale 20%, OpenStack](/csc-cloud/img/openshift-logo.png) ![:scale 20%, Kubernentes](/csc-cloud/img/kubernetes-logo.png)|
 |Usage|General purpose VMs| Sensitive Data VMs|General purpose Containers|
 |Network connection|Public Internet|Private OPN/MPLS|Public Internet|
 |Interfaces|WEB, CLI, API|WEB, CLI, API|WEB, CLI, API|

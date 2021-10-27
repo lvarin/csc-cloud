@@ -9,7 +9,7 @@
 ]
 
 .col[
-![:scale 100%, Logging page](/img/logging-web-console.png)
+![:scale 100%, Logging page](/csc-cloud/img/logging-web-console.png)
 
 ]]
 
@@ -28,7 +28,7 @@
 
 ]
 .col[
-![:scale 80%, Logging page](/img/creatingProject.png)
+![:scale 80%, Logging page](/csc-cloud/img/creatingProject.png)
 
 ]]
 
@@ -38,7 +38,7 @@
 
 .container[
   .col66[
-![:scale 100%, Terminal in a Pod](/img/terminalPod.png)
+![:scale 100%, Terminal in a Pod](/csc-cloud/img/terminalPod.png)
   ].col[
   
 * Go to the "Pods page"
@@ -54,7 +54,7 @@
 
 .container[
   .col66[
-.center[![:scale 95%, View log GUI](/img/viewLog.png)]
+.center[![:scale 95%, View log GUI](/csc-cloud/img/viewLog.png)]
   ]
   .col[
 
@@ -62,7 +62,7 @@
   * **Applications** > **Deployments**
 * Click in "View Log"
 
-![:scale 100%, View Log Page](/img/viewLogPage.png)
+![:scale 100%, View Log Page](/csc-cloud/img/viewLogPage.png)
 
 ]]
 
@@ -72,7 +72,7 @@
 
 .container[
   .col66[
-![:scale 100%, Edit Pod](/img/editPod.png)
+![:scale 100%, Edit Pod](/csc-cloud/img/editPod.png)
   ].col[
 
 * Go to the objects page, in this case the "Pods page"

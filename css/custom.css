@@ -3,7 +3,7 @@
    body { font-family: 'Computer Modern Sans'; }
 
    .remark-slide-content {
-      background-image: url(/img/slide_background.png);
+      background-image: url(/csc-cloud/img/slide_background.png);
       background-size: contain;
     }
 
@@ -23,7 +23,7 @@
   }
 
 .topicslide {
-      background-image: url(/img/topic_background.png);
+      background-image: url(/csc-cloud/img/topic_background.png);
       background-size: contain;
       color: lightgrey;
     }

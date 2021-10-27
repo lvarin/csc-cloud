@@ -1,5 +1,7 @@
 title: CSC Cloud — Using CSC Cloud
 
+baseurl: /csc-cloud
+
 plugins:
   - jekyll-sitemap
   - raw_content
