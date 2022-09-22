@@ -9,7 +9,11 @@ plugins:
 collections:
     lectures:
         output: true
+    lectures-containers:
+        output: true
     exercises:
+        output: true
+    exercises-containers:
         output: true
     extras:
         output: true
@@ -22,7 +26,17 @@ defaults:
       layout: "slides-csc"
   -
     scope:
+      path: "_lectures-comntainers"
+    values:
+      layout: "slides-csc"
+  -
+    scope:
       path: "_exercises"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "_exercises-containers"
     values:
       layout: "default"
   -

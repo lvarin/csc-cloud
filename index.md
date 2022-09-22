@@ -3,10 +3,10 @@ title: CSC Cloud Course
 author: CSC Training
 ---
 
-CSC training course for efficient use of CSC's cloud, which mainly 
-include computing resourses such as virtual machines and containers 
-as well as object storage resources in a scalable, automated, and 
-on-demand fasion. 
+CSC training course for efficient use of CSC's cloud, which mainly
+include computing resourses such as virtual machines and containers
+as well as object storage resources in a scalable, automated, and
+on-demand fasion.
 
 TO whom: The target audience for this course includes researchers and IT professionals who aim to build and manage their research and education infrastructure and IT solutions in the cloud.
 
@@ -24,19 +24,33 @@ Lectures as HTML slides. Use cursor keys or click left/right side of
 the slide to change it. You can print the slides to PDF with Chrome,
 just tweak the print settings a bit.
 
+* Virtual Machines
+
 {% for slide in site.lectures %}
-- [{{ slide.title }}]({{ slide.url | relative_url }})
+  - [{{ slide.title }}]({{ slide.url | relative_url }})
 {% endfor %}
 
+* Containers
+
+{% for slide in site.lectures-containers %}
+  - [{{ slide.title }}]({{ slide.url | relative_url }})
+{% endfor %}
 
 # Exercises
 
 Exercises supplement and build upon the introductory slides on topics related to the course. 
 
+* Virtual Machines
+
 {% for exercise in site.exercises %}
-- [{{ exercise.title }}]({{ exercise.url | relative_url }})
+  - [{{ exercise.title }}]({{ exercise.url | relative_url }})
 {% endfor %}
 
+* Containers
+
+{% for exercise in site.exercises-containers %}
+  - [{{ exercise.title }}]({{ exercise.url | relative_url }})
+{% endfor %}
 
 # Extras
 
