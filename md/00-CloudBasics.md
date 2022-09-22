@@ -2,7 +2,7 @@ class: topicslide
 
 .topic[
 
-# CSC’s Cloud Services
+# Cloud Basics
 
 ]
 
@@ -36,8 +36,42 @@ class: topicslide
   * Resource pooling
   * Rapid elasticity
   * Measured Service
+
+* The trend so far
+  * Colocation: rented space in shared facility, user-configured, user-managed
+  * Virtualization: user-configured, provider-managed
+  * Containerization: automatically managed and configured infrastructure
+
 ]
 .col[![Cloud Computing Characteristics](/csc-cloud/img/cloud_Computing_characteristics.drawio.svg)]
+]
+
+---
+
+
+# Cloud deployment models
+
+.center[![:scale 60%, cloud deployment models](/csc-cloud/img/cloud_deployment_models.drawio.svg)]
+
+---
+
+# Cloud computing wishlist
+
+.center[![Cloud computing wishlist](/csc-cloud/img/cloud_computing_wishlist.drawio.svg)]
+
+---
+
+# Cloud computing challenges
+
+.center[![Cloud Computing Challenges](/csc-cloud/img/cloud_computing_challenges.drawio.svg)]
+
+---
+class: topicslide
+
+.topic[
+
+# Cloud computing Landscape
+
 ]
 
 ---
@@ -48,31 +82,88 @@ class: topicslide
 
 ---
 
-# CSC cloud services
+# Cloud Service Landscape: IaaS
 
-* The **Pouta Cloud** is CSC’s Infrastructure as a Service ([IaaS](https://en.wikipedia.org/wiki/Infrastructure_as_a_service)) offering. Based on [OpenStack](https://www.openstack.org/) ![:scale 3%, Openstack](/csc-cloud/img/openstack-icon.png).
-  * Allows running Virtual Machines (VMs) on CSC’s Data Center infrastructure. Grants users **full control** over the OS, middleware and run time environments. On the flip side, users are responsible to **manage** and **secure** their VMs.
-* Provides an IaaS cloud environment for your **sensitive data** processing (ePouta).
+.container[.col[![:scale 80%, IaaS](/csc-cloud/img/IaaS.drawio.svg)]
+.col[
 
-* The **Rahti Cloud** is CSC's Platform as a Service ([PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service)) offering. Based on [Openshift](https://www.openshift.com/) ![:scale 3%, OpenStack](/csc-cloud/img/openshift-logo.png) (Kubernetes).
-  * Allows to run Containers on CSC's Data Center infrastructure. Provides the platform (OS, Middleware, Runtime, ...), so you can just worry about running the Software and nothing else.
+* Infrastructure as a Service:
+
+> "The network and hardware **infrastructure** is offered to you, the user, so you can just worry about running your Operating system of choice, the Software you need to run and nothing else".
+
+  * No worries about: Hardware issues
+  * Flexibility in scaling up and down
+  * Control via API
+  * Software defined network (**SDN**)
+
+]]
 
 ---
 
-# CSC cloud services comparison 
+# Cloud Service Landscape: PaaS
 
-.stripetable[
-||cPouta|ePouta|Rahti|
-|:-:|:-:|:-:|:-:|
-||![:scale 20%, OpenStack](/csc-cloud/img/openStack.png)|![:scale 20%, OpenStack](/csc-cloud/img/openStack.png)|![:scale 20%, OpenStack](/csc-cloud/img/openshift-logo.png) ![:scale 20%, Kubernentes](/csc-cloud/img/kubernetes-logo.png)|
-|Usage|General purpose VMs| Sensitive Data VMs|General purpose Containers|
-|Network connection|Public Internet|Private OPN/MPLS|Public Internet|
-|Interfaces|WEB, CLI, API|WEB, CLI, API|WEB, CLI, API|
-|ISO27001 certification|✔️|✔️|❌|
-|VAHTI 2010 certification|✔️|✔️|❌|
-|Firewall, LB, VM installation, VM auto-recovery, Backups|Self-service|Self-service|Self-service|
-|Supported Operating Systems|All|All|Containers|
-|Version|Queens|Queens|v3.11|
-|GPU|✔️|✔️|❌|
-|Allas (S3/Swift) Object Storage|✔️|❌|✔️|
+.container[.col[![:scale 80%, PaaS](/csc-cloud/img/PaaS.drawio.svg)]
+.col[
+
+* Platform as a Service:
+
+  > "The network and hardware infrastructure, plus the Operating System and thge middleware is offered as a **platform** to you, the user, so you can just worry about installing, configuring and using the Software and nothing else".
+
+  * No worries about: Hardware issues, Operation systems patches, etc.
+  * Security: Containers allow software from independent teams of people to run isolated, even though they run in the same hardware.
+  * Control via API
+  * QoS: Orchestration services provide assured resources
+
+]]
+
+
+
+---
+
+# Cloud Service Landscape: SaaS
+
+.container[.col[
+
+* Software as a Service
+
+  > "Software is offered to you, the user, so you can just worry about using the Software and nothing else."
+
+  * No worries, only use the software.
+  * Examples:
+     * myCSC
+     * Web mail
+     * Web Office platforms
+     * ...
 ]
+.col[.center[
+![:scale 35%, Saas](/csc-cloud/img/SaaS.drawio.svg)
+    ]]
+]
+
+---
+
+# Typical IaaS Cloud Setup
+
+.center[![cPouta Cloud Setup](/csc-cloud/img/cpouta_cloud_setup.drawio.svg)]
+
+---
+
+# Secure Cloud Setup
+
+.center[![ePouta Cloud Setup](/csc-cloud/img/epouta_cloud_setup.drawio.svg)]
+
+---
+
+# CSC’s Cloud Computing Services
+
+|<font size="6">cPouta</font>|<font size="6">ePouta</font>|<font size="6">Rahti</font>|
+|:-|:-|:-|
+|Community IaaS Cloud|Community IaaS Cloud|Community PaaS Cloud leveraging containers|
+|General purpose|**Sensitive data**|General purpose HTTP(s) applications|
+|Services accessible over internet|Accessible only from customer network|Services accessible over internet|
+|Powered by OpenStack|Powered by OpenStack|Powered by OpenShift OKD|
+|ISO27001 Certified|ISO27001 Certified||
+|In Production since 2013|In Production since 2013|In Open Beta\*|
+|Web UI, CLI & REST APIs supported|Web UI, CLI & REST APIs supported|Web UI, CLI & REST APIs supported|
+|![:scale 20%, OpenStack](/img/openStack.png)|![:scale 20%, OpenStack](/img/openStack.png)|![:scale 20%, OpenStack](/img/openshift-logo.png)|
+
