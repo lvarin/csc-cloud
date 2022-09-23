@@ -84,7 +84,7 @@ class: topicslide
 
 # Cloud Service Landscape: IaaS
 
-.container[.col[![:scale 80%, IaaS](/csc-cloud/img/IaaS.drawio.svg)]
+.container[
 .col[
 
 * Infrastructure as a Service:
@@ -96,7 +96,10 @@ class: topicslide
   * Control via API
   * Software defined network (**SDN**)
 
-]]
+]
+.col[
+.center[![:scale 35%, IaaS](/csc-cloud/img/IaaS.drawio.svg)]]
+]
 
 ---
 
@@ -115,8 +118,6 @@ class: topicslide
   * QoS: Orchestration services provide assured resources
 
 ]]
-
-
 
 ---
 
