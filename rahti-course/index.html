@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rahti cloud course</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/asciinema-player.css" />
+    <style>
+          @import url(./css/fonts.css);
+      @import url(./css/custom.css);
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+    </style>
+  </head>
+  <body>
+    <script src="js/asciinema-player.js"></script>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js" type="text/javascript"></script>
+    <script src="js/mermaid.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script>
+      remark.macros.scale = function (percentage) {
+        var url = this;
+        return '<img src="' + url + '" style="width: ' + percentage + '" />';
+      };
+    </script>
+    <script>
+      // var slideshow = remark.create();
+      var slideshow = remark.create(
+        { sourceUrl: 'markdown/index.md',
+          ratio: '16:9',
+          highlightStyle: 'github',
+          highlightLines: 'true',
+          highlightSpans: 'true',
+        }
+      )
+    </script>
+  </body>
+</html>

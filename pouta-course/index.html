@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pouta Cloud Course</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(./css/fonts.css);
+      @import url(./css/custom.css);
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+    </style>
+  </head>
+  <body>
+
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>
+      remark.macros.scale = function (percentage) {
+        var url = this;
+        return '<img src="' + url + '" style="width: ' + percentage + '" />';
+      };
+    </script>
+    <script>
+      // var slideshow = remark.create();
+      var slideshow = remark.create(
+        { sourceUrl: 'markdown/index.md',
+          ratio: '16:9',
+          highlightStyle: 'github',
+          highlightLines: 'true',
+          highlightSpans: 'true',
+          // slideNumberFormat: ''
+        }
+      )
+    </script>
+
+
+  </body>
+</html>
