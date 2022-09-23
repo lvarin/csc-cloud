@@ -2,7 +2,7 @@ class: topicslide
 
 .topic[
 
-# Persistent Storaget
+# Persistent Storage
 
 ]
 
