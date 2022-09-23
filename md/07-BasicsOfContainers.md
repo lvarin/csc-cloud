@@ -3,9 +3,9 @@ class: topicslide
 
 .topic[
 
-# Containers, Kubernetes/OpenShift
+# What is Rahti?
 
-## Rahti
+## PaaS cloud
 
 ]
 
