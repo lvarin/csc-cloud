@@ -502,7 +502,7 @@ An API object that exposes a Service to the internet via HTTP/HTTPS.
 # [Rahti] Logging in on web console
 
 .container[
-.col[
+  .col[
 
 * Navigate to [https://rahti.csc.fi:8443](https://rahti.csc.fi:8443).
 * Use your CSC account to login
@@ -519,17 +519,18 @@ An API object that exposes a Service to the internet via HTTP/HTTPS.
 # [Rahti] Creating a project
 
 .container[
-.col66[
+  .col66[
 
 * Click in "Create Project"
-  * **Name Short**, name that will be used to reference the project
-  * **Display Name**, Descriptive name that should make clear what the project is
-  * **Description**, It **must** be `csc_project: 2001316`. It must be associated to a CSC project for billing purposes.
+  * **Name**: Short name that will be used to reference the project
+  * **Display Name**: Descriptive name that should make clear what the project is
+  * **Description**: It **must** be: "csc_project: 2001316". It must be associated to a CSC project for billing purposes.
 * Initial quota of 5 projects
 
 ]
 .col[
 ![:scale 80%, Logging page](/csc-cloud/img/creatingProject.png)
+
 ]]
 
 ---
@@ -580,6 +581,7 @@ An API object that exposes a Service to the internet via HTTP/HTTPS.
 * Click in **Actions** > **Edit YAML**
 
   ]]
+
 ---
 # Deploying Containerized Applications
 
@@ -653,19 +655,3 @@ CSC – IT Center for Science Ltd.
 
 <https://www.linkedin.com/company/csc--it-center-for-science>
 ]
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
