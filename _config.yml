@@ -1,6 +1,7 @@
 title: CSC Cloud — Using CSC Cloud
 
 baseurl: /csc-cloud
+repository: lvarin/csc-cloud
 
 plugins:
   - jekyll-sitemap
