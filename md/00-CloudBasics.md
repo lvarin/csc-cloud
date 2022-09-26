@@ -166,5 +166,5 @@ class: topicslide
 |ISO27001 Certified|ISO27001 Certified||
 |In Production since 2013|In Production since 2013|In Open Beta\*|
 |Web UI, CLI & REST APIs supported|Web UI, CLI & REST APIs supported|Web UI, CLI & REST APIs supported|
-|![:scale 20%, OpenStack](/img/openStack.png)|![:scale 20%, OpenStack](/img/openStack.png)|![:scale 20%, OpenStack](/img/openshift-logo.png)|
+|![:scale 20%, OpenStack](/csc-cloud/img/openStack.png)|![:scale 20%, OpenStack](/csc-cloud/img/openStack.png)|![:scale 20%, OpenStack](/csc-cloud/img/openshift-logo.png)|
 
