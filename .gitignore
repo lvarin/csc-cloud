@@ -1,5 +1,5 @@
 ### Jekyll ###
-_site/
+csc-cloud/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
@@ -8,3 +8,7 @@ _site/
 *~
 _site
 Gemfile.lock
+
+### Courses ###
+pouta-course/markdown/index.md
+rahti-course/markdown/index.md
