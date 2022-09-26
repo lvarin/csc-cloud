@@ -8,7 +8,7 @@ clean:
 jekyll: csc-cloud
 
 csc-cloud: ./md/00-CloudBasics.md ./md/01-BasicsOfVMs.md ./md/02-GettingAccess.md ./md/03-CreateConfigVMs.md ./md/04-PersistentStorage.md ./md/05-OpenStackCLI.md ./md/06-AppDeployment.md ./md/07-BasicsOfContainers.md ./md/08-GettingAccess.md ./md/09-CreatingContainers.md ./md/10-AppDeployment.md ./md/11-OpenShiftCLI.md ./md/12-AppPackaging.md
-	jekyll build --destination csc-cloud
+	bundle exec jekyll build --destination csc-cloud
 
 pouta-course: pouta-course/markdown/index.md
 
