@@ -23,6 +23,12 @@ pouta-course/markdown/index.md: ./md/00-CloudBasics.md ./md/01-BasicsOfVMs.md ./
 	echo '---' >>pouta-course/markdown/index.md
 	cat ./md/03-CreateConfigVMs.md >>pouta-course/markdown/index.md
 	echo '---' >>pouta-course/markdown/index.md
+	cat ./pouta-course/markdown/coffee.md >>pouta-course/markdown/index.md
+	echo '---' >>pouta-course/markdown/index.md
+	cat ./pouta-course/markdown/exercise-set-A.md >>pouta-course/markdown/index.md
+	echo '---' >>pouta-course/markdown/index.md
+	cat ./pouta-course/markdown/lunch.md >>pouta-course/markdown/index.md
+	echo '---' >>pouta-course/markdown/index.md
 	cat ./md/04-PersistentStorage.md >>pouta-course/markdown/index.md
 	echo '---' >>pouta-course/markdown/index.md
 	cat ./md/05-OpenStackCLI.md >>pouta-course/markdown/index.md
