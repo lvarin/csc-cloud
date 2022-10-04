@@ -12,7 +12,7 @@ csc-cloud: ./md/00-CloudBasics.md ./md/01-BasicsOfVMs.md ./md/02-GettingAccess.m
 
 pouta-course: pouta-course/markdown/index.md
 
-pouta-course/markdown/index.md: ./md/00-CloudBasics.md ./md/01-BasicsOfVMs.md ./md/02-GettingAccess.md ./md/03-CreateConfigVMs.md ./md/04-PersistentStorage.md ./md/05-OpenStackCLI.md ./md/06-AppDeployment.md ./pouta-course/markdown/title.md ./pouta-course/markdown/end.md
+pouta-course/markdown/index.md: ./md/00-CloudBasics.md ./md/01-BasicsOfVMs.md ./md/02-GettingAccess.md ./md/03-CreateConfigVMs.md ./md/04-PersistentStorage.md ./md/05-OpenStackCLI.md ./md/055-pouta-management.md ./md/06-AppDeployment.md ./md/07-Advanced-topics-and-exercises.md ./pouta-course/markdown/title.md ./pouta-course/markdown/end.md
 	cat ./pouta-course/markdown/title.md >pouta-course/markdown/index.md
 	echo '---' >>pouta-course/markdown/index.md
 	cat ./md/00-CloudBasics.md >>pouta-course/markdown/index.md
@@ -33,7 +33,15 @@ pouta-course/markdown/index.md: ./md/00-CloudBasics.md ./md/01-BasicsOfVMs.md ./
 	echo '---' >>pouta-course/markdown/index.md
 	cat ./md/05-OpenStackCLI.md >>pouta-course/markdown/index.md
 	echo '---' >>pouta-course/markdown/index.md
+	cat ./md/055-pouta-management.md >>pouta-course/markdown/index.md
+	echo '---' >>pouta-course/markdown/index.md
 	cat ./md/06-AppDeployment.md >>pouta-course/markdown/index.md
+	echo '---' >>pouta-course/markdown/index.md
+	cat ./pouta-course/markdown/coffee2.md >>pouta-course/markdown/index.md
+	echo '---' >>pouta-course/markdown/index.md
+	cat ./pouta-course/markdown/exercise-set-B.md >>pouta-course/markdown/index.md
+	echo '---' >>pouta-course/markdown/index.md
+	cat ./md/07-Advanced-topics-and-exercises.md >>pouta-course/markdown/index.md
 	echo '---' >>pouta-course/markdown/index.md
 	cat ./pouta-course/markdown/end.md >>pouta-course/markdown/index.md
 
