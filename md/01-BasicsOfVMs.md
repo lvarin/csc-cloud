@@ -72,11 +72,10 @@ class: topicslide
 
 # Resources you get from Pouta Clouds
 
-.center[![:scale 65%, Typical resources you get from Pouta clouds](/csc-cloud/img/typical_Resources_You_get_from_Pouta_Clouds.png)]
+.center[![:scale 50%, Typical resources you get from Pouta clouds](/csc-cloud/img/typical_Resources_You_get_from_Pouta_Clouds.drawio.png)]
 
-.footnote[*S3/Switf API access
 
-*Network address translation]
+.footnote[\[1\] S3/Switf API access. \[2\] Network Address Translation]
 
 ---
 
@@ -135,14 +134,16 @@ Typical VM connections between ePouta and customer’s network. Such connections
 
 ---
 
-# Pouta: Hardware Flavor Options
+# Hardware Flavor Options
 
 .center[![:scale 60%, Pouta hardware options](/csc-cloud/img/pouta_hardware_options.drawio.svg)]
+
+Diverse set of hardware options to support your computing needs
 
 ---
 
 
-# Pouta VM Flavors (extract)
+# VM Flavors (extract)
 
 .footnote[Full list of flavor available at <https://docs.csc.fi/cloud/pouta/vm-flavors-and-billing/>
 
