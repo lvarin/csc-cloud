@@ -2,7 +2,7 @@ class: topicslide
 
 .topic[
 
-# Persistent Storage
+# Persistent Storage Volumes
 
 ]
 
@@ -24,7 +24,7 @@ A good practice is to separate the **data** from the **application** (OS and oth
 * It is easy to create and recover snapshots.
 
 ].col[
-.center[![Data volume](img/dataVolume.drawio.svg)]
+.center[![Data volume](/csc-cloud/img/dataVolume.drawio.svg)]
 ]]
 
 ---
@@ -50,7 +50,7 @@ class: topicslide
 
 ]
 .col[
-![:scale 80%](img/objectStorage1.drawio.svg)
+![:scale 80%](/csc-cloud/img/objectStorage1.drawio.svg)
 ]]
 
 ---
@@ -58,11 +58,11 @@ class: topicslide
 # File Storage vs Object Storage
 
 .container[.col[
-.center[![File Storage](img/fileStorage.drawio.svg)]
+.center[![File Storage](/csc-cloud/img/fileStorage.drawio.svg)]
 
 ]
 .col[
-.center[![Object Storage](img/objectStorage.drawio.svg)]
+.center[![Object Storage](/csc-cloud/img/objectStorage.drawio.svg)]
 ]]
 
 ---
@@ -84,7 +84,7 @@ class: topicslide
 
 ### Size
 
-![data size](img/dataSize.drawio.png)
+![data size](/csc-cloud/img/dataSize.drawio.png)
 ]]
 
 ---
@@ -98,14 +98,14 @@ class: topicslide
 * Latency intolerant applications.
 * Data with Strict consistency requirements.
 
-![MySQL](img/mySQL.png)
+![MySQL](/csc-cloud/img/mySQL.png)
 ]
 .col70[
 .center[
-![SQLServer](img/sqlServer.png)
+![SQLServer](/csc-cloud/img/sqlServer.png)
 
-![PostgeSQL](img/postgresql.png)
-![Oracle](img/oracle.png)
+![PostgeSQL](/csc-cloud/img/postgresql.png)
+![Oracle](/csc-cloud/img/oracle.png)
 ]
 ]]
 
@@ -114,16 +114,16 @@ class: topicslide
 # Object Storage Around us
 
 .container[.col[
-.center[![:scale 40%, Amazon S3](img/amazonS3.png)]
+.center[![:scale 40%, Amazon S3](/csc-cloud/img/amazonS3.png)]
 
-![:scale 80%, Microsoft Azure](img/microsoftAzure.png)
+![:scale 80%, Microsoft Azure](/csc-cloud/img/microsoftAzure.png)
 
-![:scale 35%, IBM Cloud Object Storage](img/ibmCloudObjectStorage.png)
-![:scale 50%, Google Cloud Storage](img/googleCloudStorage.png)
+![:scale 35%, IBM Cloud Object Storage](/csc-cloud/img/ibmCloudObjectStorage.png)
+![:scale 50%, Google Cloud Storage](/csc-cloud/img/googleCloudStorage.png)
 
 ]
 .col66[
-  ![:scale 80%, Object Storage Around Us](img/objectStorageAround.png)
+  ![:scale 80%, Object Storage Around Us](/csc-cloud/img/objectStorageAround.png)
 ]]
 
 ---
@@ -145,6 +145,6 @@ Allas [billing and quotas](https://docs.csc.fi/data/Allas/introduction/#billing-
 
 # Allas: Architecture
 
-.center[![Storage API](img/storageAPI.drawio.svg)]
+.center[![Storage API](/csc-cloud/img/storageAPI.drawio.svg)]
 
 
