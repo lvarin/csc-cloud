@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="252px" height="332px" viewBox="-0.5 -0.5 252 332" content="&lt;mxfile host=&quot;5f07fe53-ae8f-4919-9d9d-ced8b1b43e0e&quot; modified=&quot;2020-09-04T05:37:55.130Z&quot; agent=&quot;5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.48.0 Chrome/78.0.3904.130 Electron/7.3.2 Safari/537.36&quot; etag=&quot;zZFJ196mAaMdD9KGChBc&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;Page-1&quot;&gt;1Vddk5owFP01Pq5Dggg+Kmq7091tZ2ynj06ECJkGQkP82l/fBIIYga5bbbvLg8LJDTfn5uQk9Gw/2X/gKIsfWYhpD1rhvmdPexC60JK/CjiUgA2cEog4CUsI1MCCPGMN6n7RhoQ4NwIFY1SQzAQDlqY4EAaGOGc7M2zNqJk1QxFuAIsA0Sb6nYQiLlEPujX+EZMorjKD4ahsSVAVrJnkMQrZ7gSyZz3b54yJ8i7Z+5iq2lV1KfvNO1qPA+M4FZd00HXfIrrR3HpwSGXXSUi2anzioEkPf27UoCZrloq7vJiSsQyQyfZ1o7yL9D+tgv/8LXMie0HrCSU6zP+68MdPy08oY4xXOSS5Mo2ZWsIFBRN9A6x8jpHAoWxfHcq4bznm4P3TYWkZB0Z31uhO/rvvlZMW3tdDpsOm9/7nx1eygUZ+KPBe4bFIqASAvM0FZz+wz6jUsj1NWYrV+AilZxCiJJKlnQZyTWOJT7aYCyLdaKwbEhKGKs1kFxOBFxkKVM6dtF6JcbZJQ6yWu3UclnoB3ndaBjgakTRwzBIs+EGG6A7Q1TZ3qJ61l+1qK4SOxuITG6w8D2n3jY6vrg1K3miPaverUYtfnRU6koyzTp56S0CrKtx6LX/bMfl7TfqjFvbgFvQHL9OvxPGAVph+YTkRRC3M6YoJwRJTgedCEixr09uLQu1B27ImszlUwTFSq2aa7CO19/fR84bjfkDZJlxKn9uSAOdLOQtrEm04UoNbrkmh3owRlXC2lXlzPcKL9Dr6/Xw1psdz/9L0eP9CnR1stRqB2wcD6Dnu8bdB34F9p2V1On3X6Hl9OYYvl6N2J9DhXydyPZMcWCGAYUOfhRiHs/Fcu/0Jvi6uS2XltRf6f1TSbVRyfv8wu2CPueXecVbMeXFdWcyqgyyZY7jqoG+I2Bs29xjQsoo71H9N7auPjpYz8k1OGQvBuPre6DpdvMlzxJkWrOK6zfnCHlh9UwugucOCytavPGDIx/pjq2g7+WK1Z78A&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="0" y="262" width="250" height="20" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 248px; height: 1px; padding-top: 272px; margin-left: 1px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                <div style="font-size: 20px">
+                                    <font style="font-size: 20px">
+                                        File Name: CTSCAN_Kapoor
+                                    </font>
+                                </div>
+                                <div style="font-size: 20px">
+                                    <font style="font-size: 20px">
+                                        Created by: User1
+                                    </font>
+                                </div>
+                                <div style="font-size: 20px">
+                                    <font style="font-size: 20px">
+                                        Created on: 19-09-2017
+                                    </font>
+                                </div>
+                                <div style="font-size: 20px">
+                                    <font style="font-size: 20px">
+                                        File Type: DICOM
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="125" y="276" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    File Name: CTSCAN_Kapoor...
+                </text>
+            </switch>
+        </g>
+        <rect x="83" y="72" width="87" height="120" fill="none" stroke="none" pointer-events="all"/>
+        <path d="M 83 85.82 C 83.65 78.53 88 72.8 93.49 72 L 151.94 72 L 170 95.88 L 170 177.09 C 169.69 185.08 164.92 191.49 158.92 192 L 93.49 192 C 88.08 191.24 83.76 185.68 83 178.52 Z M 90.11 176.36 C 90.11 179.24 91.64 181.73 93.76 182.3 L 159.06 182.3 C 161.14 181.68 162.62 179.21 162.61 176.36 L 162.61 101.45 L 148.02 101.45 L 148.02 81.82 L 93.76 81.82 C 91.81 82.46 90.4 84.72 90.3 87.39 Z M 105.8 110.42 L 146.11 110.42 L 146.11 120.36 L 105.8 120.36 Z M 105.8 129.33 L 146.11 129.33 L 146.11 139.27 L 105.8 139.27 Z M 105.8 148.24 L 146.11 148.24 L 146.11 158.3 L 105.8 158.3 Z" fill="#00bef2" stroke="none" pointer-events="all"/>
+        <rect x="80" y="89.14" width="52.5" height="25.71" rx="3.86" ry="3.86" fill="#1ba1e2" stroke="#006eaf" pointer-events="all"/>
+        <rect x="95.75" y="93.43" width="21" height="17.14" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 19px; height: 1px; padding-top: 102px; margin-left: 97px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #FFFFFF; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                FILE
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="106" y="106" fill="#FFFFFF" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    FILE
+                </text>
+            </switch>
+        </g>
+        <rect x="63.5" y="2" width="123" height="20" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 121px; height: 1px; padding-top: 12px; margin-left: 65px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                <font style="font-size: 20px">
+                                    File Storage
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="125" y="16" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    File Storage
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://desk.draw.io/support/solutions/articles/16000042487" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Viewer does not support full SVG 1.1
+            </text>
+        </a>
+    </switch>
+</svg>
