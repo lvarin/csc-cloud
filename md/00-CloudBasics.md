@@ -153,6 +153,8 @@ class: topicslide
 
 .center[![ePouta Cloud Setup](/csc-cloud/img/epouta_cloud_setup.drawio.svg)]
 
+"A private data center"
+
 ---
 
 # CSC’s Cloud Computing Services
