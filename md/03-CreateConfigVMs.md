@@ -1,17 +1,74 @@
+
 layout: false
 class: topicslide
 
 .topic[
 
-# How-tos
-
-## For the exercises
+# Creating and Configuring VMs
 
 ]
 
 ---
 
-# [Pouta] Creating a SSH Key pair
+# User Interfaces
+
+* Web User Interface
+  * Suitable for administering individual VMs, keys, images, volumes…
+  * The only UI to support Haka federated login
+
+* CLI tools
+  * Suitable for more elaborate resource provisioning and possibly some lightweight (scripted) software integrations
+  * More info at <https://research.csc.fi/pouta-install-client>
+
+* Programming APIs
+  * Suitable for building very large systems and stacks
+  * Support from individual services (compute, storage) to full-fledged orchestration
+  * List of APIs available at <https://pouta.csc.fi/dashboard/project/api_access/> (login required).
+
+---
+
+# Workflow for Creating Resources I
+
+.center[![:scale 60%, Workflow Creating Resources](/csc-cloud/img/workflow_creating_resources.png)]
+
+---
+
+# Workflow for Creating Resources II
+
+.center[![:scale 60%, Workflow Creating Resources](/csc-cloud/img/workflow_creating_resources2.png)]
+
+---
+
+# Workflow for Creating Resources III
+
+.center[![:scale 60%, Workflow Creating Resources](/csc-cloud/img/workflow_creating_resources3.png)]
+
+---
+
+# Workflow for Creating Resources IV
+
+.center[![:scale 60%, Workflow Creating Resources](/csc-cloud/img/workflow_creating_resources4.png)]
+
+---
+
+# SSH
+
+.bubble.bubble-bottom-left[
+SSH or Secure Shell is a cryptographic network protocol for operating services **securely** over an **unsecured network**.[1].footnote[[1]<https://en.wikipedia.org/wiki/SSH>, [2]<https://wiki.archlinux.org/index.php/SSH_keys>]]
+
+## 🧑‍
+
+## SSH keys
+
+.bubble.bubble-bottom-left[
+SSH keys serve as a means of identifycation to an SSH server using **public-key cryptography** and **challenge-response** authentication. Key-based authentication is not prone to brute-force attacks and credentials are not exposed to the server.[2]
+]
+
+## 👩‍
+
+---
+
+# Creating a SSH Key pair
 
 .container[.col[
 
@@ -40,34 +97,62 @@ It is also possible to create the key using the command line tool `ssh-keygen` a
 
 ---
 
-# [Pouta] Storing a (private) Key
+# Storing a (private) Key
 
 .container[.col[
     ![UNIX](/csc-cloud/img/unix.png)
 
 #### Linux and Mac OS X
 
-1. Create `.ssh` directory in `$HOME` if it is not there already, copy the key pair to the `.ssh` directory, and fix permissions.
+].col[
+
+![Win](/csc-cloud/img/win.png)
+
+
+#### Windows (PowerShell)
+
+]]
+
+1. Create `.ssh` directory in `$HOME` if it is not there already, copy the key pair to the `.ssh` directory.
+
+  .container[.col[
 
   ```bash
-  mkdir -p  .ssh
-  chmod 700 .ssh
+mkdir -p -m=700  .ssh
   mv ~/Downloads/yourkey.pem ~/.ssh/
   chmod 400 .ssh/yourkey.pem
   ```
+  ].col[
+
+  ```bash
+mkdir ~/.ssh
+  mv ~/Downloads/yourkey.pem ~/.ssh/
+  ```
+  ]]
 
 1. Protect key with passphrase (Optional)
 
+.container[.col[
+
   ```bash
-  ssh-keygen -p -f yourkey.pem
+ssh-keygen -p -f yourkey.pem
   ```
 
-]
+].col[
 
-.col[
-    ![Win](/csc-cloud/img/win.png)
+  ```bash
+ssh-keygen.exe -p -f yourkey.pem
+  ```
 
-#### Windows
+]]
+
+---
+
+# Storing a (private) Key II
+
+![Win](/csc-cloud/img/win.png)
+
+#### Putty (for older Windows)
 
 1. Download Putty and Puttygen tools if you don’t have them
 1. Load your private key (`yourkey.pem`) into puttygen and change it to .ppk format
@@ -75,11 +160,9 @@ It is also possible to create the key using the command line tool `ssh-keygen` a
     1. Provide user name cloud-user
     1. Provide the password which you added to Puttygen (Optional)
 
-]]
-
 ---
 
-# [Pouta] Security groups
+# Security groups
 
 A Security Group defines a set of cloud level firewall rules for filtering traffic, typically inbound, but also outbound.
 
@@ -99,7 +182,7 @@ A Security Group defines a set of cloud level firewall rules for filtering traff
 
 ---
 
-# [Pouta] Creating a security group rules
+# Creating a security group rules
 
 .container[.col50[
 
@@ -118,7 +201,7 @@ A Security Group defines a set of cloud level firewall rules for filtering traff
 
 ---
 
-# [Pouta] Creating an Instance
+# Creating an Instance
 
 .container[.col[
 
@@ -135,3 +218,63 @@ A Security Group defines a set of cloud level firewall rules for filtering traff
 ].col[
 ![:scale 75%, launch instance](/csc-cloud/img/launch_instance.png)
 ]]
+
+---
+
+# Attaching a Floating IP
+
+.container[.col60[
+
+* Navigate to:
+    * **Compute > Instances**
+    * Under Actions click in **Associate Floating IP**
+
+* In the dialog that appears, select an IP address. If no IP is available, click in the plus sign.
+
+![:scale 80%, Instances](/csc-cloud/img/instances.png)
+
+].col[
+
+![:scale 100%, Managing floating IP](/csc-cloud/img/manage-floating-ip.png)
+
+]]
+
+---
+
+# Connect to the VM by SSH
+
+```sh
+ssh <USER>@<FLOATING-IP>
+```
+
+* `<FLOATING-IP>`, must be the floating ip that was set up in the previous step
+* `<USER>`, must be the username suitable for the distribution used:
+    * `ubuntu` for Ubuntu distributions
+    * `centos` for Centos8 distributions
+    * `cloud-user` for Centos7 distributions
+
+* In most cases if you try to connect as `root`, it will fail, but you will get back the correct username:
+
+```sh
+$ ssh root@XXX.YYY.ZZZ.WWW
+Please login as the user "centos" rather than the user "root".
+```
+
+---
+
+
+# Create and access a VM in cPouta
+## _(Checklist)_
+
+* ☑️ Internet access
+* ☑️ A CSC account
+* ☑️ Access to a Pouta project
+    * ☑️ Access to Pouta Web UI
+* ☑️ One IPv4 address - a public “Floating IP”
+* ☑️ Security Group permitting access from User’s computer
+* Identity:
+  * ☑️ SSH Key-Based Authentication (**recommended**)
+  * Password (only for tests)
+* ☑️ SSH client software
+
+
