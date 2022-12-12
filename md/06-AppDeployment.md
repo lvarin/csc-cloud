@@ -51,13 +51,15 @@ sudo useradd apache
 ```
 ].col[
 
-.center[[![:scale 60%, Sandwich](https://imgs.xkcd.com/comics/sandwich.png)](https://xkcd.com/149)]
+.center[[![:scale 40%, Sandwich](https://imgs.xkcd.com/comics/sandwich.png)](https://xkcd.com/149)
 
+
+<https://xkcd.com/149/>]
 ]]
 
 ---
 
-# Repository installation: yum
+# Repository installation: `yum`
 
 .container[.col[
 
@@ -86,7 +88,7 @@ sudo useradd apache
 
 ---
 
-# Repository installation: apt
+# Repository installation: `apt`
 
 .container[.col[
 

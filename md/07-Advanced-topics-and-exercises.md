@@ -36,5 +36,5 @@ Optional extra exercise
 
 * Exercise 1 - Use Terraform to create a VM
 
-Go to [exercise set C](/exercises.html)
+Go to [exercise set C](../exercises/07-Advanced-topics-and-exercises.html)
 

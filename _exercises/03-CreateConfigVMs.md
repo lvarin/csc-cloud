@@ -4,11 +4,11 @@ title: Creating and Configuring VMs
 
 # Creating and Configuring VMs
 
-## Login
+## 1. Login
 Once we have access to Pouta, we should log in to the [**Pouta Web User Interface**](https://pouta.csc.fi). Then, we can follow the instructions on [launching a virtual machine in the cPouta web interface](https://docs.csc.fi/cloud/pouta/launch-vm-from-web-gui/).
 
 
-## Configuring SSH Keys
+## 2. Configuring SSH Keys
 We can create SSH keys in the web interface by navigating to *Compute*, then *Key Pairs* and selecting *Create Key Pair*. Next, give the key pair name denoted by the variable `KEY_NAME` and save the downloaded `$KEY_NAME.pem` file to your home directory. Then, on the command line, move to the home directory, create `.ssh` directory with read, write and execute privileges for the user if it doesn't exist, and move your key file into it.
 
 ```bash
@@ -33,7 +33,7 @@ chmod 400 ~/.ssh/$KEY_NAME.pem
 ```
 
 
-## Creating a Virtual Machine
+## 3. Creating a Virtual Machine
 We will use a virtual machine with the *Ubuntu 20.04* operating system. We can launch a virtual machine by navigating to *Compute*, then *Instances*, and select *Launch Instance*. Set the following parameters:
 
 - In the *Details* tab:
@@ -50,7 +50,7 @@ We will use a virtual machine with the *Ubuntu 20.04* operating system. We can l
 Finally, press *Launch*.
 
 
-## Configuring Security Groups
+## 4. Configuring Security Groups
 We can manage internet access to our virtual machine by defining security groups and associating them with the virtual machine. We can set up firewalls and security groups by navigating to *Network*, then *Security Groups*.
 
 ### Creating SSH Group
@@ -89,11 +89,11 @@ Finally, let's create `HTTPS` security group and add the rule with parameters:
 We can add security groups to a virtual machine by navigating to the *Compute* menu, then *Instances*, and in selecting *Edit Security Groups* from the menu next to *Create Snapshot*. We should add the `SSH`, `HTTP`, and `HTTPS` groups to our virtual machine. By including the `SSH` security group, we can connect to our virtual machine via SSH. Furthermore, by including `HTTP` and `HTTPS` security groups, we allow traffic from the internet to the web server and application deployed on the virtual machine.
 
 
-## Configuring a Floating IP
+## 5. Configuring a Floating IP
 Associating the virtual machine with a floating IP, that is, a public IP, allows users to connect to it with the methods we have set on the security groups. To create and associate a public IP, navigate to the menu next to *Create Snapshot* and select *Associate Floating IP*. Then, on the *IP Address* field, click the *plus* sign to allocate a new floating IP. Once allocated, select the created floating IP and press *Associate*. We denote the value of the floating IP as `FLOATING_IP`.
 
 
-## Configuring Persistent Storage
+## 6. Configuring Persistent Storage
 We can also [persistent storage](https://docs.csc.fi/cloud/pouta/persistent-volumes/) to the virtual machine by navigating to *Volumes*, then *Volumes*, and selecting *Create Volume* with the following parameters:
 
 - *Volume Name*: `genie`
