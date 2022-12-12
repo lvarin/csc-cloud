@@ -29,25 +29,25 @@ class: topicslide
 
 # Workflow for Creating Resources I
 
-.center[![:scale 60%, Workflow Creating Resources](/csc-cloud/img/workflow_creating_resources.png)]
+.center[![:scale 50%, Workflow Creating Resources](/csc-cloud/img/workflow_creating_resources.drawio.png)]
 
 ---
 
 # Workflow for Creating Resources II
 
-.center[![:scale 60%, Workflow Creating Resources](/csc-cloud/img/workflow_creating_resources2.png)]
+.center[![:scale 50%, Workflow Creating Resources](/csc-cloud/img/workflow_creating_resources2.drawio.png)]
 
 ---
 
 # Workflow for Creating Resources III
 
-.center[![:scale 60%, Workflow Creating Resources](/csc-cloud/img/workflow_creating_resources3.png)]
+.center[![:scale 50%, Workflow Creating Resources](/csc-cloud/img/workflow_creating_resources3.drawio.png)]
 
 ---
 
 # Workflow for Creating Resources IV
 
-.center[![:scale 60%, Workflow Creating Resources](/csc-cloud/img/workflow_creating_resources4.png)]
+.center[![:scale 50%, Workflow Creating Resources](/csc-cloud/img/workflow_creating_resources4.drawio.png)]
 
 ---
 
