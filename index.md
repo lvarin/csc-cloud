@@ -38,7 +38,7 @@ just tweak the print settings a bit.
 
 # Exercises
 
-Exercises supplement and build upon the introductory slides on topics related to the course. 
+Practical exercises supplement and build upon the introductory theory slides on topics related to the course. 
 
 * Virtual Machines
 

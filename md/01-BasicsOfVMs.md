@@ -152,16 +152,16 @@ Billing units and Pricing at <https://research.csc.fi/pricing>
 (1 BU ≈ 0.021 EUR)]
 
 .stripetable[
-|Flavor|Cores|Memory|Disk(root)|Disk(ephemeral)|Disk(total)|Memory/core|Billing Units/h|
+|Flavor|Cores|Memory(GiB)|Disk(root)|Disk(ephemeral)|Disk(total)|Memory/core|Billing Units/h|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|standard.tiny|1|1GiB|80GB|0GB|80GB|1GiB|0.25|
-|io.70GB|2|10GiB|20GB|70GB|90GB|5GiB|3|
-|hpc.4.5core|5|20GiB|80GB|0GB|80GB|4GiB|6|
-|standard.3xlarge|8|60GiB|80GB|0GB|80GB|7.5GiB|16|
-|io.700GB|16|75GiB|20GB|700GB|720GB|4.7GiB|24|
-|hpc-gen4.80core|80|335GiB|80GB|0GB|80GB|4.2GiB|120|
-|hpc.5.128core|128|443GiB|80GB|0GB|80GB|3.46GiB|180|
-|tb.3.1470RAM|80|1402GiB|80GB|2500GB|2580GB|17.2GiB|320|
+|standard.tiny|1|0.9|80GB|0GB|80GB|0.9|0.25|
+|io.70GB|2|9.7|20GB|70GB|90GB|4.8|3|
+|hpc.4.5core|5|21|80GB|0GB|80GB|4.2|6|
+|standard.3xlarge|8|62|80GB|0GB|80GB|7.7|16|
+|io.700GB|16|78|20GB|700GB|720GB|4.8|24|
+|hpc.4.80core|80|343|80GB|0GB|80GB|4.2|100|
+|hpc.5.128core|128|464|80GB|0GB|80GB|3.6|180|
+|tb.3.1470RAM|80|1470|80GB|2500GB|2580GB|18|320|
 ]
 
 ---
