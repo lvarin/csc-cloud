@@ -88,14 +88,3 @@ We can add security groups to a virtual machine by navigating to the *Compute* m
 ## 4. Configuring a Floating IP
 Associating the virtual machine with a floating IP, that is, a public IP, allows users to connect to it with the methods we have set on the security groups. To create and associate a public IP, navigate to the menu next to *Create Snapshot* and select *Associate Floating IP*. Then, on the *IP Address* field, click the *plus* sign to allocate a new floating IP. Once allocated, select the created floating IP and press *Associate*. We denote the value of the floating IP as `FLOATING_IP`.
 
-
-## 5. Configuring Persistent Storage
-We can also [persistent storage](https://docs.csc.fi/cloud/pouta/persistent-volumes/) to the virtual machine by navigating to *Volumes*, then *Volumes*, and selecting *Create Volume* with the following parameters:
-
-- *Volume Name*: `genie`
-- *Volume Source*: `No source, Empty volume`
-- *Type*: `Standard`
-- *Size*: `1 GiB`
-- *Availability Zone*: `nova`
-
-From the menu next to *Edit Volume*, select *Manage Attachments* and then attach the volume to the `genie` virtual machine.

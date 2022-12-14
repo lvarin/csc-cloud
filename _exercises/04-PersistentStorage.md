@@ -28,7 +28,7 @@ In this exercise, we will learn, using the web interface, how to add a persisten
     * Check disk partition using fdisk command and find your volume, you should be able to identify it on basis of its size.
 
     ```sh
-    sudo fdisk -l</code></pre>
+    sudo fdisk -l
     ```
 
 1. **Create a file system on your volume**
@@ -36,7 +36,7 @@ In this exercise, we will learn, using the web interface, how to add a persisten
     * Remember to enter the correct volume device path based on the output of **fdisk**, for ex. if your disk path was **/dev/vdb**, and if you have chosen `xfs` as filesystem, you should execute the following:
 
     ```sh
-    sudo mkfs.xfs /dev/vdb</code></pre>
+    sudo mkfs.xfs /dev/vdb
     ```
 
 1. **Create the mount directory**
@@ -67,7 +67,46 @@ In this exercise, we will learn, using the web interface, how to add a persisten
 
 You may now repeat steps 2 and 6 to check that indeed the files you created in step 7 are still there.
 
-## 2. Create your own Bucket and Object using the WebUI
+## 2. Create a Snapshot of a VM
+
+> Pre-requisites, a VM like the one create in [Creating and Configuring VMs](03-CreateConfigVMs.html)
+
+In order to create copy of your cloud instance's OS, middleware, runtime configurations or application stacks you build inside it, you can create a snapshot of your VM. Snapshots also provide means to capture and store the filesystem state of your instance.
+
+You can share snapshots with other Pouta users or use it for yourself to launch new VM's with the same configurations, applications and file system state. Snapshots also provide you mechanisms for saving billing units inside Pouta clouds, For example, you can take a snapshot of your ideal machine, and delete the machine. After being deleted the machine will no longer spend billing. Afterwards, when you need the VM again, you may relaunch it using that snapshot.
+
+The snapshots are stored in Pouta as **Images**
+
+1. **Shut down your instance**
+    * In the Pouta web interface, **Compute > Instances > instance_name > Shut Off Instance**
+
+1. **Create the Snapshot**
+    * In the Pouta web interface, **Compute > Instances > instance_name > Create Snapshot**
+        * Name it: `_lastname_firstname_vm_date_`
+        * This creates a new Image in **Compute > Image**
+
+1. **Review that the snapshot was created properly**
+    * Go to **Compute > Images**
+    * Click on the **name of your image (snapshot)** to see its details
+
+1. **Delete your machine**
+    * Go to **Instances**
+    * Click on your instance and delete it.
+
+1. **Relaunch new instance with same state**
+    * Navigate to the **Instances** section and click **Launch Instance**.
+        * **Instance Name**: `lastname_firstname_vm`.
+        * **Flavor**: `standard.tiny`.
+        * **Instance Boot Source**: `Boot from Snapshot`.
+        * Find your Snapshot and select it.
+        * Navigate to **Access and Security** in the same pop-up
+        * Select **Key Pair** you created.
+        * Select Security Group you created in same pop-up.
+        * You can leave the rest as defaults and click on **Launch Instance**
+
+This will launch new cloud machine which is in same state as of instance you deleted. Please verify if you still have your data and installed packages in VM. Notice that your VM's private IP is now different, but you can assign again the same Floating IP it had.
+
+## 3. Create your own Bucket and Object using the WebUI
 
 In this exercise we will store data in an Object storage system. The difference with Persistent Volumes is that, instead of using a file system with data as a file hierarchy, it stores data as blocks within buckets. A bucket (also called container) is a storage compartment for your data, the equivalent of Volume. Also normally, the files will be available using HTTP (and the S3/Swift protocol).
 

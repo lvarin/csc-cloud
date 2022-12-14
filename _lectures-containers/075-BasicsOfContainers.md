@@ -1,5 +1,5 @@
 ---
-title: Basics of containers and orchestrations 
+title: Basics of containers 
 author: CSC Training
 titleslide: true
 lang: en

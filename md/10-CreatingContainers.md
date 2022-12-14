@@ -1,18 +1,11 @@
+layout: false
+class: topicslide
 
-# [Rahti] Logging in on web console
+.topic[
 
-.container[
-  .col[
-
-* Navigate to [https://rahti.csc.fi:8443](https://rahti.csc.fi:8443).
-* Use your CSC account to login
+# Creating Containers 
 
 ]
-
-.col[
-![:scale 100%, Logging page](/csc-cloud/img/logging-web-console.png)
-
-]]
 
 ---
 
