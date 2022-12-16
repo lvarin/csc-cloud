@@ -9,69 +9,91 @@ class: topicslide
 
 ---
 
-# [Rahti] Creating a project
+# Source2Image
 
-.container[
-  .col66[
+.container[.col[
 
-* Click in "Create Project"
-  * **Name**: Short name that will be used to reference the project
-  * **Display Name**: Descriptive name that should make clear what the project is
-  * **Description**: It **must** be: "csc_project: 2001316". It must be associated to a CSC project for billing purposes.
-* Initial quota of 5 projects
+Automatically builds and deploys code into Rahti:
 
-]
-.col[
-![:scale 80%, Logging page](/csc-cloud/img/creatingProject.png)
+* Receives a GiT repository. Clones and analyses it. 
 
+* Builds the container **image**.
+
+* Stores the image in the project registry
+
+* Deploys the application
+
+].col[
+
+```sh
+oc new-app https://github.com/sclorg/django-ex
+oc expose svc django-ex
+```
+
+![:scale 80%, Source2Image](../img/source2image.drawio.svg)
+
+]]
+
+<https://docs.csc.fi/cloud/rahti/images/creating/#using-the-source-to-image-mechanism>
+
+---
+
+# Local build
+
+Build an image from you local computer using a [Dockerfile](https://docs.docker.com/engine/reference/builder/) "recipe".
+
+.container[.col[
+
+* Dockerfile example:
+
+```Dockerfile
+FROM centos/python-38-centos7
+COPY . /opt/app-root/
+WORKDIR /opt/app-root/
+RUN pip install -r requirements.txt
+ENTRYPOINT ["/usr/libexec/s2i/run"]|
+```
+
+Similar to what a Source2Image process will do
+
+].col[
+
+* Build:
+
+    * with: `docker build .`
+    * with: `buildah bud --format=docker`
+    * with: `docker buildx build .` 
+
+Different tools with different use cases in mind. 
 ]]
 
 ---
 
-# [Rahti] How to open a terminal session
+# Auto triggered builds
 
-.container[
-  .col66[
-![:scale 100%, Terminal in a Pod](/csc-cloud/img/terminalPod.png)
-  ].col[
-  
-* Go to the "Pods page"
-  **Applications** > **Pods**
-* Click in the running Pod that you one to open an interactive session with
-* Click in **Terminal**
+![webhook](../img/trigger.drawio.svg)
 
-]]
+When a developer pushes code, an automatic process is started to bring changes to Rahti.
 
----
+.container[.col[
 
-# [Rahti] How to see application logs?
+1. Code is pushed
 
-.container[
-  .col66[
-.center[![:scale 95%, View log GUI](/csc-cloud/img/viewLog.png)]
-  ]
-  .col[
+1. GitHub\* .footnote[\* or Gitlab, or any other alternative] has internal logic to trigger or not a build 
 
-* Go to the "Deployments page"
-  * **Applications** > **Deployments**
-* Click in "View Log"
+1. After the build is done, the image is stored internally
 
-![:scale 100%, View Log Page](/csc-cloud/img/viewLogPage.png)
+1. A new image triggers a re-deployment
+
+].col[
+
+Set it up by:
+
+* Create build: `oc new-build <git_URL>`
+
+* Add the web hook:
+    * <https://docs.csc.fi/cloud/rahti/tutorials/webhooks/> 
 
 ]]
 
----
-
-# [Rahti] Editing API objects
-
-.container[
-  .col66[
-![:scale 100%, Edit Pod](/csc-cloud/img/editPod.png)
-  ].col[
-
-* Go to the objects page, in this case the "Pods page"
-* Click in the object you want to edit.
-* Click in **Actions** > **Edit YAML**
-
-  ]]
 

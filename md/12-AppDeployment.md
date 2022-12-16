@@ -1,10 +1,14 @@
-# Deploying Containerized Applications
+layout: false
+class: topicslide
 
-- Exersise section might suffice for this 
-  
-  or 
+.topic[
 
-- Add overview content (e.g. packaging, adding route, etc )
+# Deployment of Applications
 
+## by Example
 
+]
 
+---
+
+# 

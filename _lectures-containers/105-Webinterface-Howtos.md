@@ -1,5 +1,5 @@
 ---
-title: Kubernetes/OpenShift API
+title: Web interface How-tos 
 author: CSC Training
 titleslide: true
 lang: en

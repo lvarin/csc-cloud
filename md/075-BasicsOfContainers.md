@@ -46,7 +46,17 @@ After
 
 ---
 
-# Containers
+# What is a container?
+
+A **OS-level virtualization** software package. Allows **easy** and **reliable** development and deployment. 
+* Uses features of the Linux kernel (_cgroups_ and _namespaces_) to provide an isolated environment.
+
+.center[![:scale 70%, Run containers](../img/run_containers.drawio.svg)]
+
+
+---
+
+# Container characteristics
 
 .container[.col[
 
