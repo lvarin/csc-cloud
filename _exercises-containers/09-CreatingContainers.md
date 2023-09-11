@@ -37,7 +37,7 @@ title: Creating Containers
 
 * Get the standard output of the container by going to Applications > Pods  
   Click on your Pod (should be `example`) and go to Logs tab.  
-  You should see this:
+  You should see this:  
   ![hello openshift](../img/pod-logs.png)
 
 
