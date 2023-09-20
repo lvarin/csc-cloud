@@ -20,7 +20,9 @@ class: topicslide
 ##  DeploymentConfig  
 * DeploymentConfig objects involve one or more replication controllers, which preceded replica sets.
 ]]
-Use Deployment object unless you need a specific feature or behavior provided by DeploymentConfig objects.
+.center[
+**Use Deployment object unless you need a specific feature or behavior provided by DeploymentConfig objects.**
+]
 
 ---
 
@@ -31,9 +33,9 @@ Use Deployment object unless you need a specific feature or behavior provided by
 - It supports **set-based** selector requirements.  
   (**Set-based** label requirements allow filtering keys according to a set of values)
 ]
-.col[
-![:scale 60%, ReplicaSet](../img/replicaset_def.png)
-]]
+.col[.right[
+![:scale 80%, ReplicaSet](../img/replicaset_def.png)
+]]]
 
 ---
 
@@ -48,9 +50,9 @@ But
   (**Equality-based** label requirements allow filtering by label keys and values)  
 A selector is a set of labels assigned to the pods that are managed by the replication controller.
 ]
-.col[
-![:scale 60%, ReplicaControllers](../img/replicacontrollers_def.png)
-]]
+.col[.right[
+![:scale 80%, ReplicaControllers](../img/replicacontrollers_def.png)
+]]]
 
 ---
 
@@ -62,9 +64,9 @@ A selector is a set of labels assigned to the pods that are managed by the repli
   - Describe the desired state of a component of an application.
   - They create replica sets, which orchestrate pod lifecycles
 ]
-.col[
-![:scale 60%, Deployment](../img/deployment_def.png)    
-]]
+.col[.right[
+![:scale 80%, Deployment](../img/deployment_def.png)    
+]]]
 
 ---
 
@@ -77,9 +79,9 @@ Provides:
 - Versioning of application to allow rollbacks either manually of automatically.
 - Manual replication scaling and autoscaling
 ]
-.col[
-![:scale 60%, DeploymentConfig](../img/deploymentconfig_def.png) 
-]]
+.col[.right[
+![:scale 80%, DeploymentConfig](../img/deploymentconfig_def.png) 
+]]]
 Replication controllers are created when a DeploymentConfig is created.
 
 ---
@@ -97,6 +99,6 @@ Replication controllers are created when a DeploymentConfig is created.
   - Objects prefer availavility over consistency
   - Implicit config change trigger in every change in the pod template or deployment. Can be paused.
 ]
-.col[
-![CAP-Theorem](../img/CAP_Theorem_Venn_Diagram.png)
-]]
+.col[.right[
+![:scale 90%, CAP-Theorem](../img/CAP_Theorem_Venn_Diagram.png)
+]]]
