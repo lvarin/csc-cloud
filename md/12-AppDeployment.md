@@ -14,11 +14,11 @@ class: topicslide
 .container[
 .col[
 ## Deployment  
-Deployment objects involve one or more replica sets, which contain a point-in-time record of the state of a deployment as a pod template.
+* Deployment objects involve one or more replica sets, which contain a point-in-time record of the state of a deployment as a pod template.
 ]
 .col[
 ##  DeploymentConfig  
-DeploymentConfig objects involve one or more replication controllers, which preceded replica sets.
+* DeploymentConfig objects involve one or more replication controllers, which preceded replica sets.
 ]]
 Use Deployment object unless you need a specific feature or behavior provided by DeploymentConfig objects.
 
@@ -32,7 +32,7 @@ Use Deployment object unless you need a specific feature or behavior provided by
   (**Set-based** label requirements allow filtering keys according to a set of values)
 ]
 .col[
-![ReplicaSet](../img/replicaset_def.png)
+![:scale 60%, ReplicaSet](../img/replicaset_def.png)
 ]]
 
 ---
@@ -49,7 +49,7 @@ But
 A selector is a set of labels assigned to the pods that are managed by the replication controller.
 ]
 .col[
-![ReplicaControllers](../img/replicacontrollers_def.png)
+![:scale 60%, ReplicaControllers](../img/replicacontrollers_def.png)
 ]]
 
 ---
@@ -63,7 +63,7 @@ A selector is a set of labels assigned to the pods that are managed by the repli
   - They create replica sets, which orchestrate pod lifecycles
 ]
 .col[
-![Deployment](../img/deployment_def.png)    
+![:scale 60%, Deployment](../img/deployment_def.png)    
 ]]
 
 ---
@@ -78,7 +78,7 @@ Provides:
 - Manual replication scaling and autoscaling
 ]
 .col[
-![DeploymentConfig](../img/deploymentconfig_def.png) 
+![:scale 60%, DeploymentConfig](../img/deploymentconfig_def.png) 
 ]]
 Replication controllers are created when a DeploymentConfig is created.
 
@@ -98,5 +98,5 @@ Replication controllers are created when a DeploymentConfig is created.
   - Implicit config change trigger in every change in the pod template or deployment. Can be paused.
 ]
 .col[
-![:scale 40%, CAP-Theorem](../img/CAP_Theorem_Venn_Diagram.png)
+![CAP-Theorem](../img/CAP_Theorem_Venn_Diagram.png)
 ]]
