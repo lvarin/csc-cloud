@@ -13,12 +13,12 @@ class: topicslide
 
 .container[
 .col[
-## Deployment  
-* Deployment objects involve one or more replica sets, which contain a point-in-time record of the state of a deployment as a pod template.
+# Deployment  
+* Deployment objects involve one or more **replica sets**, which contain a point-in-time record of the state of a deployment as a pod template.
 ]
 .col[
-##  DeploymentConfig  
-* DeploymentConfig objects involve one or more replication controllers, which preceded replica sets.
+#  DeploymentConfig  
+* DeploymentConfig objects involve one or more **replication controllers**, which preceded replica sets.
 ]]
 .center[
 **Use Deployment object unless you need a specific feature or behavior provided by DeploymentConfig objects.**
@@ -43,8 +43,8 @@ class: topicslide
 .container[
 .col[
 Similar to a replica set: 
-- Ensures that a specified number of replicas of a pod are running at all times. 
-But
+- Ensures that a specified number of replicas of a pod are running at all times.  
+But  
 - If there are more running pods than desired, it deletes as many as necessary to match the defined amount.
 - It only supports equality-based selector requirements.  
   (**Equality-based** label requirements allow filtering by label keys and values)  
@@ -82,7 +82,6 @@ Provides:
 .col[.right[
 ![:scale 80%, DeploymentConfig](../img/deploymentconfig_def.png) 
 ]]]
-Replication controllers are created when a DeploymentConfig is created.
 
 ---
 
@@ -91,12 +90,12 @@ Replication controllers are created when a DeploymentConfig is created.
 .col[
 - Both are supported in Openshift Container Platform
 - **DeploymentConfig**... 
-  - Objects prefer consistency
+  - Prefer consistency
   - Automatic rolling back to the last successfully deployed replica set in case of a failure.
   - Support lifecycle hooks.
   - Custom strategies.
 - **Deployment**... 
-  - Objects prefer availavility over consistency
+  - Prefer availavility over consistency
   - Implicit config change trigger in every change in the pod template or deployment. Can be paused.
 ]
 .col[.right[
