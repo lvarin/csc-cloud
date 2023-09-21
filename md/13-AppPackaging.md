@@ -48,8 +48,9 @@ Two commands:
 ### helm search hub  
 This command search charts from repositories on Artifact Hub
 ]
-.col[.right[
+.col[
 ### helm search repo
+.right[
 This command search charts from your Helm configuration.  
 Type `helm` to find the location of your config file.
 ]]]
