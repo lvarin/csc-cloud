@@ -79,4 +79,4 @@ After your installation, you can list your releases with the command `helm ls` (
 # What's next?
 Helm allows you to build your own charts, more explication in the exercice [Packaging Containerized Applications](../exercises-containers/12-AppPackaging.html)
 
-.center[![:scale 30%, Helm-exercices](../img/helmchart.jpg)]
+.center[![:scale 40%, Helm-exercices](../img/helmchart.jpg)]
