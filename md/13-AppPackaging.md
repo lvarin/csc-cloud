@@ -33,7 +33,7 @@ Three important concepts:
 - Helm Library
 ]
 .col[.right[
-![:scale 70%, Helm](../img/helm_arch.png)]
+![:scale 80%, Helm](../img/helm_arch.png)]
 ]]
 
 ---
@@ -79,4 +79,4 @@ After your installation, you can list your releases with the command `helm ls` (
 # What's next?
 Helm allows you to build your own charts, more explication in the exercice [Packaging Containerized Applications](../exercises-containers/12-AppPackaging.html)
 
-.center[![:scale 80%, Helm-exercices](../img/helmchart.jpg)]
+.center[![:scale 60%, Helm-exercices](../img/helmchart.jpg)]
