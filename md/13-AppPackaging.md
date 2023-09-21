@@ -45,11 +45,15 @@ Two commands:
 
 .container[
 .col[
+.center[
 ### helm search hub  
+]
 This command search charts from repositories on Artifact Hub
 ]
 .col[
+.center[
 ### helm search repo
+]
 .right[
 This command search charts from your Helm configuration.  
 Type `helm` to find the location of your config file.
