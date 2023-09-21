@@ -15,7 +15,8 @@ class: topicslide
 Helm is like a package (called **charts**) manager for Kubernetes and helps you manage Kunernetes applications.  
 Helm charts help you define, install and upgrade Kubernetes application.
 
-![Helm-logo](../img/helm.svg)
+.center[
+![Helm-logo](../img/helm.svg)]
 
 ---
 
@@ -28,19 +29,11 @@ Three important concepts:
 - **release**: A running instance of a chart combined with a specific config.  
 
 **Helm** is implemented into two distincts parts:
-- Helm Client:
-  - Local chart development
-  - Managing repositories
-  - Managing releases
-  - Interfacing with Helm librairy (charts to be installed, upgrade or uninstall existing releases)
+- Helm Client
 - Helm Library
-  - Interface with the Kubernetes API server
-  - Combine chart and configuration to build a release
-  - Install chart into Kubernetes
-  - Upgrade and uninstall charts by interaction with Kubernetes
 ]
-.col[
-![:scale 90%, Helm](../img/helm_arch.png)
+.col[.right[
+![:scale 70%, Helm](../img/helm_arch.png)]
 ]]
 
 ---
@@ -49,6 +42,7 @@ Three important concepts:
 Two commands:
 - `helm search hub`
 - `helm search repo`  
+
 .container[
 .col[
 ### helm search hub  
@@ -59,7 +53,7 @@ This command search charts from repositories on Artifact Hub
 This command search charts from your Helm configuration.  
 Type `helm` to find the location of your config file.
 ]]
-.center[![scale: 80%, Helm-search](../img/helm-search.png)]
+.center[![scale: 70%, Helm-search](../img/helm-search.png)]
 
 ---
 
@@ -83,6 +77,6 @@ After your installation, you can list your releases with the command `helm ls` (
 ---
 
 # What's next?
-Helm allows you to build your own charts, more explication in the exercice [Packaging Containerized Applications](../_exercises-containers/12-AppPackaging.md)
+Helm allows you to build your own charts, more explication in the exercice [Packaging Containerized Applications](../exercises-containers/12-AppPackaging.html)
 
-![Helm-exercices](../img/helmchart.jpg)
+.center[![:scale 80%, Helm-exercices](../img/helmchart.jpg)]
