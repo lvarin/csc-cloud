@@ -48,11 +48,11 @@ Two commands:
 ### helm search hub  
 This command search charts from repositories on Artifact Hub
 ]
-.col[
+.col[.right[
 ### helm search repo
 This command search charts from your Helm configuration.  
 Type `helm` to find the location of your config file.
-]]
+]]]
 .center[![scale: 70%, Helm-search](../img/helm-search.png)]
 
 ---
@@ -70,7 +70,7 @@ One command: `helm install`
 It may requires the installation of a repository before:
 - `helm repo add ....`
 - `helm repo update`
-- `helm repo search ....`
+- `helm search repo ....`
 - `helm install [NAME] [CHART]`  
 After your installation, you can list your releases with the command `helm ls` (Use `-A` for all namespaces)
 
@@ -79,4 +79,4 @@ After your installation, you can list your releases with the command `helm ls` (
 # What's next?
 Helm allows you to build your own charts, more explication in the exercice [Packaging Containerized Applications](../exercises-containers/12-AppPackaging.html)
 
-.center[![:scale 60%, Helm-exercices](../img/helmchart.jpg)]
+.center[![:scale 30%, Helm-exercices](../img/helmchart.jpg)]
