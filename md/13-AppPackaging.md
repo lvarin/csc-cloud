@@ -24,7 +24,7 @@ Helm charts help you define, install and upgrade Kubernetes application.
 .container[
 .col[
 Three important concepts:
-- **chart**: A bundle of information necessary to reate an instance of a Kubernetes application.
+- **chart**: A bundle of information necessary to create an instance of a Kubernetes application.
 - **config**: It contains configuration information that can be merged into a packaged chart.
 - **release**: A running instance of a chart combined with a specific config.  
 
@@ -72,7 +72,7 @@ As easy as package manager from Linux systems:
 
 # Helm packages installation
 One command: `helm install`
-It may requires the installation of a repository before:
+It may require the installation of a repository before:
 - `helm repo add ....`
 - `helm repo update`
 - `helm search repo ....`
